@@ -1,0 +1,7 @@
+type Vehicle{
+    id: ID!,
+    type: String,
+    model: String,
+    brandName: String,
+    launchDate: String
+}

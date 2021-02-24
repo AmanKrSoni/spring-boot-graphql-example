@@ -1,0 +1,5 @@
+type Query{
+    vehicles(count: Int): [Vehicle]
+    vehicle(id: ID): Vehicle
+    getVehiclesByModel(model: String!): [Vehicle!]!
+}

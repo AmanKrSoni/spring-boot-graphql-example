@@ -1,0 +1,3 @@
+type Mutation{
+    createVehicle(type: String!, model: String!, brandName: String!,launchDate: String!): Vehicle
+}
