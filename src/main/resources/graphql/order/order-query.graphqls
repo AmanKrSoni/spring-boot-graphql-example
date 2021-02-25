@@ -1,0 +1,5 @@
+extend type Query {
+
+    getOrder(id : ID!): Order
+    getAllOrders(count: Int):[Order!]
+}

@@ -1,0 +1,23 @@
+type Product{
+    productId: ID!,
+    version: Int,
+    name: String
+}
+
+type OrderItem{
+    orderItemId: ID!,
+    version: Int,
+    quantity: Int,
+    product: Product
+}
+
+scalar DateTime
+scalar Date
+
+type Order{
+    id: ID!,
+    version: Int,
+    orderNumber: String,
+    createdAt: String,
+    items: [OrderItem]
+}

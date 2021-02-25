@@ -1,0 +1,6 @@
+type Employee{
+    id: ID!,
+    name: Name,
+    address: Address,
+    position: Position
+}

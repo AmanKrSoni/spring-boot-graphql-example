@@ -1,0 +1,5 @@
+type Name{
+    firstName: String,
+    middleName: String,
+    lastName: String
+}

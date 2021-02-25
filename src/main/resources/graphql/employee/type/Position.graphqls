@@ -1,0 +1,6 @@
+enum Position{
+    HOD
+    STAFF
+    FACULTY
+    COORDINATOR
+}
