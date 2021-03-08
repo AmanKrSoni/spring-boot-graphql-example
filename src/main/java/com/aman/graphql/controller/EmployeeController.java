@@ -1,6 +1,7 @@
 package com.aman.graphql.controller;
 
 import com.aman.graphql.entity.Employee;
+import com.aman.graphql.entity.Name;
 import com.aman.graphql.service.EmployeeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,11 @@ public class EmployeeController {
     @GetMapping("{id}")
     public ResponseEntity getEmployeeById(@PathVariable int id){
         return ResponseEntity.ok(employeeService.getEmployeeById(id));
+    }
+
+    @PostMapping("name")
+    public ResponseEntity getEmployeeByName(@RequestBody Name name){
+        return ResponseEntity.ok(employeeService.getEmployeeByName(name));
     }
 
     @GetMapping("hello")

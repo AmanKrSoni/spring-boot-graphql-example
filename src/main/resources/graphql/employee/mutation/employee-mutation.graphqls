@@ -1,2 +1,3 @@
-#extend type Mutation{
-#}
+extend type Mutation{
+    createEmployee(input: EmployeeInput!): Employee!
+}

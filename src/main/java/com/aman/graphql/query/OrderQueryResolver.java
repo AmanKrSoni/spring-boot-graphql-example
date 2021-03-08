@@ -2,7 +2,7 @@ package com.aman.graphql.query;
 
 import com.aman.graphql.entity.Order;
 import com.aman.graphql.service.OrderService;
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

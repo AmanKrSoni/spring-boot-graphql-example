@@ -1,23 +1,44 @@
-type Product{
+scalar DateTime
+scalar Date
+
+input Product{
     productId: ID!,
     version: Int,
     name: String
 }
 
-type OrderItem{
+input OrderItem{
     orderItemId: ID!,
     version: Int,
     quantity: Int,
     product: Product
 }
 
-scalar DateTime
-scalar Date
-
-type Order{
+input Order{
     id: ID!,
     version: Int,
     orderNumber: String,
     createdAt: String,
     items: [OrderItem]
+}
+
+type ProductOut{
+    productId: ID!,
+    version: Int,
+    name: String
+}
+
+type OrderItemOut{
+    orderItemId: ID!,
+    version: Int,
+    quantity: Int,
+    product: ProductOut
+}
+
+type OrderOut{
+    id: ID!,
+    version: Int,
+    orderNumber: String,
+    createdAt: String,
+    items: [OrderItemOut]
 }

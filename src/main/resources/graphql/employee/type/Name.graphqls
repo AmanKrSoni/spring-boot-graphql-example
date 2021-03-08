@@ -1,3 +1,10 @@
+input NameInput{
+    firstName: String,
+    middleName: String,
+    lastName: String
+}
+
+
 type Name{
     firstName: String,
     middleName: String,

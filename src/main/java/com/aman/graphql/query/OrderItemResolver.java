@@ -2,15 +2,13 @@ package com.aman.graphql.query;
 
 import com.aman.graphql.entity.Order;
 import com.aman.graphql.entity.OrderItem;
-import com.aman.graphql.repository.OrderItemRepository;
 import com.aman.graphql.service.OrderService;
-import com.coxautodev.graphql.tools.GraphQLResolver;
+import graphql.kickstart.tools.GraphQLResolver;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 @Component
