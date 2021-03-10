@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 
 @Data
 @Entity
@@ -26,7 +25,4 @@ public class Employee implements Serializable {
     private Name name;
     private Address address;
     private Position position;
-
-//    @OneToMany(mappedBy = "id", fetch = FetchType.LAZY)
-//    List<Employee> workers;
 }
