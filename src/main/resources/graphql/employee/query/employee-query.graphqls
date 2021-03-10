@@ -1,0 +1,5 @@
+extend type Query{
+    getAllEmployees(count: Int!):[Employee],
+    getEmployee(id: ID!): Employee,
+    getEmployeeByPosition(position: Position!): [Employee]
+}

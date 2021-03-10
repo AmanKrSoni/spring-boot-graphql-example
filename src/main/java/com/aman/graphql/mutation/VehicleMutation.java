@@ -2,7 +2,7 @@ package com.aman.graphql.mutation;
 
 import com.aman.graphql.entity.Vehicle;
 import com.aman.graphql.service.VehicleService;
-import com.coxautodev.graphql.tools.GraphQLMutationResolver;
+import graphql.kickstart.tools.GraphQLMutationResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

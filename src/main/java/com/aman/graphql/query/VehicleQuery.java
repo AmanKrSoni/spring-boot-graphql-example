@@ -2,7 +2,7 @@ package com.aman.graphql.query;
 
 import com.aman.graphql.entity.Vehicle;
 import com.aman.graphql.service.VehicleService;
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

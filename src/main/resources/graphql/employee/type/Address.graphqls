@@ -1,0 +1,14 @@
+input AddressInput{
+    country: String,
+    state: String,
+    city: String,
+    zipCode: String
+}
+
+type Address{
+    country: String,
+    state: String,
+    city: String,
+    zipCode: String
+}
+

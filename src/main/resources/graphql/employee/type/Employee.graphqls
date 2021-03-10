@@ -1,0 +1,14 @@
+input EmployeeInput{
+    id: ID!,
+    name: NameInput,
+    address: AddressInput,
+    position: Position
+}
+
+type Employee{
+    id: ID!,
+    name: Name,
+    address: Address,
+    position: Position
+}
+
