@@ -1,5 +1,6 @@
 package com.aman.graphql.controller;
 
+import com.aman.graphql.dto.EmployeeFilter;
 import com.aman.graphql.entity.Employee;
 import com.aman.graphql.entity.Name;
 import com.aman.graphql.service.EmployeeService;
@@ -35,6 +36,11 @@ public class EmployeeController {
     public ResponseEntity hello(){
         log.info("Hello Aman !");
         return new ResponseEntity(HttpStatus.OK);
+    }
+
+    @PostMapping("filter")
+    public ResponseEntity filterEmployee(@RequestBody EmployeeFilter employeeFilter){
+        return ResponseEntity.ok(employeeService.filter(employeeFilter));
     }
 
 }

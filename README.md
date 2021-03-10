@@ -101,3 +101,24 @@ subscription{
   }
 }
 ```
+
+* Filter Query
+```graphql
+query{
+  filterEmployee(filter:{firstName:"Name"}){
+    id
+    name{
+      firstName
+      middleName
+      lastName
+    }
+    address{
+      country
+      state
+      city
+      zipCode
+    }
+    position
+  }
+}
+```
