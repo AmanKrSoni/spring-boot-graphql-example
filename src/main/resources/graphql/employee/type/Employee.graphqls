@@ -1,3 +1,10 @@
+input EmployeeFilter{
+    id: Int,
+    firstName: String,
+    country: String
+    position: Position
+}
+
 input EmployeeInput{
     id: ID!,
     name: NameInput,

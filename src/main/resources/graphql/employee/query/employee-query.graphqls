@@ -1,5 +1,6 @@
 extend type Query{
     getAllEmployees(count: Int!):[Employee],
+    filterEmployee(filter: EmployeeFilter):[Employee],
     getEmployee(id: ID!): Employee,
     getEmployeeByPosition(position: Position!): [Employee]
 }
